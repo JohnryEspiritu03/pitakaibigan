@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PITAKAIBIGAN</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#"><img src="hlogo.png" alt="PITAKAIBIGAN" /></a>
+      <ul>
+        <li><a href="#sec" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Read</a></li>
+        <li><a href="#">References</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="back.png" id="back" />
+      <img src="sides.png" id="sides" />
+      <a href="#sec"><img src="center.png" id="center" /></a>
+    </section>
+    <div class="sec" id="sec">
+      <h2>PITAKAIBIGAN</h2>
+      <p>
+        Pitakaibigan is a project which aims to spread financial literacy among Filipino adults. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nisi
+        provident illo ullam, quis dolor consectetur sequi perferendis delectus
+        sunt libero. Ea voluptate saepe atque incidunt ipsa error aliquam nemo
+        illo quo, rem molestiae facilis, minus aut dolorum earum maiores quos
+        blanditiis vitae consequatur quidem sapiente, deleniti dignissimos
+        accusantium. Nesciunt! <br /><br />Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Nesciunt quibusdam alias placeat soluta
+        rerum odio totam nulla corrupti iste unde quos, saepe qui. Nesciunt,
+        corporis veniam nulla earum magnam dolorum rerum praesentium voluptatum.
+        Dolorum minima ducimus fugit illo, voluptates ipsam dolorem veritatis
+        nulla harum earum! Corrupti eos deleniti sapiente tenetur officia
+        blanditiis pariatur sequi repellat eum voluptate est totam, distinctio,
+        voluptates earum accusantium excepturi, sunt molestias numquam corporis
+        harum possimus nihil ullam commodi. Quae dolorum dicta sed nulla,
+        doloribus veritatis esse quidem nostrum natus debitis tempora fuga
+        eligendi cum reiciendis. Asperiores officiis natus a nemo dignissimos,
+        accusantium laborum quod et perspiciatis? Laudantium autem maxime nisi
+        labore repudiandae possimus natus, magni ad voluptatem cupiditate quam,
+        optio sit. Tempore ipsa debitis, atque repellendus quas vel est
+        excepturi voluptatem harum quidem non earum dolores nesciunt recusandae
+        in enim molestiae ratione eaque impedit sit aut praesentium corrupti?
+        Quia iure minima porro enim tempora ea.<br /><br />Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Quos perspiciatis eligendi
+        perferendis quaerat expedita impedit, hic exercitationem. Reiciendis a
+        at, nesciunt cum fuga quis laudantium?<br /><br />Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Modi, consequuntur iste eum
+        perferendis quod, consectetur eligendi ipsa quisquam nihil aperiam
+        tempora quos reprehenderit harum? Temporibus quibusdam quisquam
+        veritatis architecto similique corrupti tempore libero eum nam totam,
+        dolores omnis sapiente aspernatur nostrum consectetur nemo, earum
+        assumenda ratione culpa voluptatum enim blanditiis corporis! Excepturi
+        quis aut alias quia laboriosam perferendis, dicta, modi minus officiis
+        reprehenderit cum repudiandae vero maxime ipsa ipsam corrupti doloremque
+        tempore earum exercitationem quasi!<br /><br />
+      </p>
+    </div>
+    <footer>
+      <a href="#"><img src="hlogo.png" alt="PITAKAIBIGAN" /></a>
+      <ul>
+        <li><a href="#" class="active">Back to Top</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Read</a></li>
+        <li><a href="#">References</a></li>
+      </ul>
+    </footer>
+    <script>
+      let back = document.getElementById("back");
+      let sides = document.getElementById("sides");
+      let center = document.getElementById("center");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        back.style.left = value * 0.25 + "px";
+        sides.style.top = value * 0.5 + "px";
+        center.style.top = value * 1.05 + "px";
+      });
+    </script>
+  </body>
+</html>
